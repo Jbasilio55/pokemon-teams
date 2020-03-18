@@ -5,7 +5,7 @@ const POKEMONS_URL = `${BASE_URL}/pokemons`
 const main = document.getElementsByTagName('main')[0]
 const releaseButton = document.getElementsByClassName('release')[0]
 console.log(main)
-console.log(release)
+console.log(releaseButton)
 
 
 fetch(TRAINERS_URL)
@@ -46,10 +46,10 @@ main.addEventListener("click", function(event){
     }
 })
 
-releaseButton.addEventListener("click", function(event){
-    if(event.target.innerText === "release")
-    releaseButton.parentNode.removeChild()
-})
+// releaseButton.addEventListener("click", function(event){
+//     if(event.target.innerText === "release")
+//     releaseButton.parentNode.removeChild()
+// })
 
 
 
